@@ -1,0 +1,9 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arche"
+version = "0.0.1"
+description = "Modular building blocks for high-performance GPU kernels"
+requires-python = ">=3.10"

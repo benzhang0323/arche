@@ -1,0 +1,16 @@
+{
+  "name": "batched_sparse_row_gather",
+  "category": "memory",
+  "description": "Batched sparse row gather from token-major storage.",
+  "difficulty": "intermediate",
+  "backend": ["triton"],
+  "reference": ["torch"],
+  "tags": [
+    "sparse-gather",
+    "indirect-indexing",
+    "gpu-kernel-pattern",
+    "sparse-attention",
+    "moe-routing",
+    "irregular-memory-access"
+  ]
+}

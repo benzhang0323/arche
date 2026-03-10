@@ -1,0 +1,31 @@
+{
+  "version": "0.1",
+  "categories": {
+    "memory": [
+      {
+        "name": "paged_kv_gather",
+        "path": "modules/memory/paged_kv_gather",
+        "description": "Indexed row retrieval from paged KV storage.",
+        "implementation": "implementations/triton/paged_kv_gather.py",
+        "reference": "references/torch/paged_kv_gather_ref.py"
+      },
+      {
+        "name": "batched_sparse_row_gather",
+        "path": "modules/memory/batched_sparse_row_gather",
+        "description": "Batched sparse row gather from token-major storage.",
+        "implementation": "implementations/triton/batched_sparse_row_gather.py",
+        "reference": "references/torch/batched_sparse_row_gather_ref.py"
+      },
+      {
+        "name": "layout_transform_copy",
+        "path": "modules/memory/layout_transform_copy",
+        "description": "Copy data while transforming its logical layout.",
+        "implementation": "implementations/triton/layout_transform_copy.py",
+        "reference": "references/torch/layout_transform_copy_ref.py"
+      }
+    ],
+    "masking": [],
+    "reductions": [],
+    "numerics": []
+  }
+}

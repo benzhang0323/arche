@@ -1,0 +1,16 @@
+{
+  "name": "paged_kv_gather",
+  "category": "memory",
+  "description": "Indexed row retrieval from paged KV storage.",
+  "difficulty": "advanced",
+  "backend": ["triton"],
+  "reference": ["torch"],
+  "tags": [
+    "paged-kv-cache",
+    "gather",
+    "indirect-indexing",
+    "sparse-attention",
+    "llm-inference",
+    "irregular-memory-access"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "layout_transform_copy",
+  "category": "memory",
+  "description": "Copy data while transforming its logical layout.",
+  "difficulty": "intermediate",
+  "backend": ["triton"],
+  "reference": ["torch"],
+  "tags": [
+    "layout-transform",
+    "transpose",
+    "memory-movement",
+    "tiling",
+    "gpu-kernel-pattern",
+    "staging"
+  ]
+}
