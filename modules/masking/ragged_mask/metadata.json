@@ -1,0 +1,15 @@
+{
+  "name": "ragged_mask",
+  "category": "masking",
+  "description": "Apply per-batch validity masking over query-key score layouts.",
+  "difficulty": "intermediate",
+  "backend": ["triton"],
+  "reference": ["torch"],
+  "tags": [
+    "ragged-mask",
+    "variable-length",
+    "attention",
+    "predicate-masking",
+    "gpu-kernel-pattern"
+  ]
+}

@@ -66,6 +66,7 @@ Arche is not intended to be:
 ### Masking
 
 - `causal_mask`
+- `ragged_mask`
 
 Each module includes a specification, implementation notes, a Triton
 implementation, and a PyTorch reference.

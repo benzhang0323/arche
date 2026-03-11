@@ -31,6 +31,13 @@
         "description": "Apply causal masking over query-key score layouts.",
         "implementation": "implementations/triton/causal_mask.py",
         "reference": "references/torch/causal_mask_ref.py"
+      },
+      {
+        "name": "ragged_mask",
+        "path": "modules/masking/ragged_mask",
+        "description": "Apply per-batch validity masking over query-key score layouts.",
+        "implementation": "implementations/triton/ragged_mask.py",
+        "reference": "references/torch/ragged_mask_ref.py"
       }
     ],
     "reductions": [],
