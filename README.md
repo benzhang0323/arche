@@ -55,6 +55,21 @@ Arche is not intended to be:
 - `implementations/` — backend implementations
 - `references/` — correctness-oriented reference implementations
 
+## Current Modules
+
+### Memory
+
+- `paged_kv_gather`
+- `batched_sparse_row_gather`
+- `layout_transform_copy`
+
+### Masking
+
+- `causal_mask`
+
+Each module includes a specification, implementation notes, a Triton
+implementation, and a PyTorch reference.
+
 ## Status
 
 Arche is currently in early development.

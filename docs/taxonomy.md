@@ -1,48 +1,54 @@
-# Module Taxonomy
+# Kernel Taxonomy
 
-Arche organizes GPU kernel modules into a small, practical taxonomy.
+Arche currently organizes modules into four categories:
 
-The taxonomy is intended to group recurring kernel structures in a way
-that is useful for implementation, evaluation, and discussion.
+- memory
+- masking
+- reductions
+- numerics
+
+These categories reflect recurring structural patterns in high-performance GPU
+kernels.
 
 ## Memory
 
-Modules in this category capture non-trivial memory access structures,
-including irregular gathers, paged access patterns, sparse selection,
-and layout movement.
+Memory modules capture access, movement, and layout transformation patterns.
 
-These structures are often central to kernel difficulty because memory
-behavior strongly influences both performance and implementation
-complexity.
+Examples include:
+
+- paged row retrieval
+- sparse batched gather
+- layout-changing copy
 
 ## Masking
 
-Masking modules capture predication, validity checks, boundary
-handling, and sparsity-aware execution.
+Masking modules capture validity and boundary constraints that determine which
+elements participate in downstream computation.
 
-These structures frequently appear alongside irregular memory access
-and are often necessary to preserve correctness without sacrificing
-performance.
+Examples include:
+
+- causal masking
+- ragged validity masking
+- edge masking
 
 ## Reductions
 
-Reduction modules capture accumulation across tiles, blocks, or streams
-of values.
+Reduction modules capture aggregation patterns over blocks, rows, or streaming
+state.
 
-This includes both simple block reductions and more structured online
-or streaming updates that appear in numerically sensitive kernels.
+Examples include:
+
+- block reduction
+- online softmax
+- segmented reduction
 
 ## Numerics
 
-Numerics modules capture precision management and stability-preserving
-computation, such as mixed-precision accumulation.
+Numerics modules capture precision-sensitive accumulation and stability
+patterns.
 
-These modules become important when kernel correctness depends not only
-on memory access and scheduling, but also on how values are represented
-and accumulated.
+Examples include:
 
-## Notes
-
-The taxonomy is expected to evolve as Arche grows. Early versions
-prioritize a small number of grounded categories rather than broad or
-overly fine-grained coverage.
+- fp32 accumulation templates
+- stable mixed-precision softmax
+- variance accumulation

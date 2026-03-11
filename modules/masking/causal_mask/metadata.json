@@ -1,0 +1,15 @@
+{
+  "name": "causal_mask",
+  "category": "masking",
+  "description": "Apply causal masking over query-key score layouts.",
+  "difficulty": "intermediate",
+  "backend": ["triton"],
+  "reference": ["torch"],
+  "tags": [
+    "causal-mask",
+    "attention",
+    "autoregressive",
+    "predicate-masking",
+    "gpu-kernel-pattern"
+  ]
+}

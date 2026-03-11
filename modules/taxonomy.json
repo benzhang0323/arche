@@ -24,7 +24,15 @@
         "reference": "references/torch/layout_transform_copy_ref.py"
       }
     ],
-    "masking": [],
+    "masking": [
+      {
+        "name": "causal_mask",
+        "path": "modules/masking/causal_mask",
+        "description": "Apply causal masking over query-key score layouts.",
+        "implementation": "implementations/triton/causal_mask.py",
+        "reference": "references/torch/causal_mask_ref.py"
+      }
+    ],
     "reductions": [],
     "numerics": []
   }
