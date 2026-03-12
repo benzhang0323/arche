@@ -1,0 +1,15 @@
+{
+  "name": "online_softmax",
+  "category": "reductions",
+  "description": "Compute softmax through a numerically stable running reduction.",
+  "difficulty": "advanced",
+  "backend": ["triton"],
+  "reference": ["torch"],
+  "tags": [
+    "online-softmax",
+    "reduction",
+    "attention",
+    "numerical-stability",
+    "gpu-kernel-pattern"
+  ]
+}

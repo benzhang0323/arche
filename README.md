@@ -68,6 +68,10 @@ Arche is not intended to be:
 - `causal_mask`
 - `ragged_mask`
 
+### Reductions
+
+- `online_softmax`
+
 Each module includes a specification, implementation notes, a Triton
 implementation, and a PyTorch reference.
 

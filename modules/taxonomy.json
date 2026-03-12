@@ -40,7 +40,15 @@
         "reference": "references/torch/ragged_mask_ref.py"
       }
     ],
-    "reductions": [],
+    "reductions": [
+      {
+        "name": "online_softmax",
+        "path": "modules/reductions/online_softmax",
+        "description": "Compute softmax through a numerically stable running reduction.",
+        "implementation": "implementations/triton/online_softmax.py",
+        "reference": "references/torch/online_softmax_ref.py"
+      }
+    ],
     "numerics": []
   }
 }
