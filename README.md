@@ -70,6 +70,7 @@ Arche is not intended to be:
 
 ### Reductions
 
+- `block_reduce_sum`
 - `online_softmax`
 
 Each module includes a specification, implementation notes, a Triton

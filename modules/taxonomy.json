@@ -42,6 +42,13 @@
     ],
     "reductions": [
       {
+        "name": "block_reduce_sum",
+        "path": "modules/reductions/block_reduce_sum",
+        "description": "Compute a local sum over a row or block of values.",
+        "implementation": "implementations/triton/block_reduce_sum.py",
+        "reference": "references/torch/block_reduce_sum_ref.py"
+      },
+      {
         "name": "online_softmax",
         "path": "modules/reductions/online_softmax",
         "description": "Compute softmax through a numerically stable running reduction.",

@@ -1,0 +1,15 @@
+{
+  "name": "block_reduce_sum",
+  "category": "reductions",
+  "description": "Compute a local sum over a row or block of values.",
+  "difficulty": "intermediate",
+  "backend": ["triton"],
+  "reference": ["torch"],
+  "tags": [
+    "block-reduce-sum",
+    "reduction",
+    "aggregation",
+    "tile-reduction",
+    "gpu-kernel-pattern"
+  ]
+}
