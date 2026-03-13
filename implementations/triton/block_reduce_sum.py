@@ -34,6 +34,7 @@ def _block_reduce_sum_kernel(
 
     x_ptrs = x_ptr + pid_b * stride_xb + offs_n * stride_xn
     vals = tl.load(x_ptrs, mask=mask_n, other=0.0)
+    vals = vals.to(tl.float32)
 
     acc = tl.sum(vals, axis=0)
 
@@ -52,7 +53,7 @@ def block_reduce_sum(x: torch.Tensor):
 
     B, N = x.shape
 
-    out = torch.empty((B,), device=x.device, dtype=x.dtype)
+    out = torch.empty((B,), device=x.device, dtype=torch.float32)
 
     BLOCK_N = triton.next_power_of_2(N)
 

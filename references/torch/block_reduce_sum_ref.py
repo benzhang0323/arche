@@ -10,4 +10,4 @@ def block_reduce_sum_ref(x: torch.Tensor):
     returns : [B]
     """
 
-    return x.sum(dim=-1)
+    return x.float().sum(dim=-1)
