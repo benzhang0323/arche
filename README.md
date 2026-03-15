@@ -67,6 +67,7 @@ Arche is not intended to be:
 
 - `causal_mask`
 - `ragged_mask`
+- `block_edge_mask`
 
 ### Reductions
 

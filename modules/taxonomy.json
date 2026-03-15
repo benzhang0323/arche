@@ -38,6 +38,13 @@
         "description": "Apply per-batch validity masking over query-key score layouts.",
         "implementation": "implementations/triton/ragged_mask.py",
         "reference": "references/torch/ragged_mask_ref.py"
+      },
+      {
+        "name": "block_edge_mask",
+        "path": "modules/masking/block_edge_mask",
+        "description": "Apply boundary masking to partial tiles at block edges.",
+        "implementation": "implementations/triton/block_edge_mask.py",
+        "reference": "references/torch/block_edge_mask_ref.py"
       }
     ],
     "reductions": [
