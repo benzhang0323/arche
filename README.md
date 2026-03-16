@@ -74,6 +74,10 @@ Arche is not intended to be:
 - `block_reduce_sum`
 - `online_softmax`
 
+### Numerics
+
+- `welford_variance`
+
 Each module includes a specification, implementation notes, a Triton
 implementation, and a PyTorch reference.
 

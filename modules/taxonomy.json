@@ -63,6 +63,14 @@
         "reference": "references/torch/online_softmax_ref.py"
       }
     ],
-    "numerics": []
+    "numerics": [
+      {
+        "name": "welford_variance",
+        "path": "modules/numerics/welford_variance",
+        "description": "Compute row-wise mean and variance using numerically stable running statistics.",
+        "implementation": "implementations/triton/welford_variance.py",
+        "reference": "references/torch/welford_variance_ref.py"
+      }
+    ]
   }
 }

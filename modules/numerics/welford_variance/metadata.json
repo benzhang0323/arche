@@ -1,0 +1,15 @@
+{
+  "name": "welford_variance",
+  "category": "numerics",
+  "description": "Compute mean and variance using numerically stable running updates.",
+  "difficulty": "advanced",
+  "backend": ["triton"],
+  "reference": ["torch"],
+  "tags": [
+    "welford-variance",
+    "numerics",
+    "variance",
+    "running-statistics",
+    "gpu-kernel-pattern"
+  ]
+}
