@@ -6,22 +6,22 @@
         "name": "paged_kv_gather",
         "path": "modules/memory/paged_kv_gather",
         "description": "Indexed row retrieval from paged KV storage.",
-        "implementation": "implementations/triton/paged_kv_gather.py",
-        "reference": "references/torch/paged_kv_gather_ref.py"
+        "implementation": "implementations/triton/memory/paged_kv_gather.py",
+        "reference": "references/torch/memory/paged_kv_gather_ref.py"
       },
       {
         "name": "batched_sparse_row_gather",
         "path": "modules/memory/batched_sparse_row_gather",
         "description": "Batched sparse row gather from token-major storage.",
-        "implementation": "implementations/triton/batched_sparse_row_gather.py",
-        "reference": "references/torch/batched_sparse_row_gather_ref.py"
+        "implementation": "implementations/triton/memory/batched_sparse_row_gather.py",
+        "reference": "references/torch/memory/batched_sparse_row_gather_ref.py"
       },
       {
         "name": "layout_transform_copy",
         "path": "modules/memory/layout_transform_copy",
         "description": "Copy data while transforming its logical layout.",
-        "implementation": "implementations/triton/layout_transform_copy.py",
-        "reference": "references/torch/layout_transform_copy_ref.py"
+        "implementation": "implementations/triton/memory/layout_transform_copy.py",
+        "reference": "references/torch/memory/layout_transform_copy_ref.py"
       }
     ],
     "masking": [
@@ -29,22 +29,22 @@
         "name": "causal_mask",
         "path": "modules/masking/causal_mask",
         "description": "Apply causal masking over query-key score layouts.",
-        "implementation": "implementations/triton/causal_mask.py",
-        "reference": "references/torch/causal_mask_ref.py"
+        "implementation": "implementations/triton/masking/causal_mask.py",
+        "reference": "references/torch/masking/causal_mask_ref.py"
       },
       {
         "name": "ragged_mask",
         "path": "modules/masking/ragged_mask",
         "description": "Apply per-batch validity masking over query-key score layouts.",
-        "implementation": "implementations/triton/ragged_mask.py",
-        "reference": "references/torch/ragged_mask_ref.py"
+        "implementation": "implementations/triton/masking/ragged_mask.py",
+        "reference": "references/torch/masking/ragged_mask_ref.py"
       },
       {
         "name": "block_edge_mask",
         "path": "modules/masking/block_edge_mask",
         "description": "Apply boundary masking to partial tiles at block edges.",
-        "implementation": "implementations/triton/block_edge_mask.py",
-        "reference": "references/torch/block_edge_mask_ref.py"
+        "implementation": "implementations/triton/masking/block_edge_mask.py",
+        "reference": "references/torch/masking/block_edge_mask_ref.py"
       }
     ],
     "reductions": [
@@ -52,15 +52,15 @@
         "name": "block_reduce_sum",
         "path": "modules/reductions/block_reduce_sum",
         "description": "Compute a local sum over a row or block of values.",
-        "implementation": "implementations/triton/block_reduce_sum.py",
-        "reference": "references/torch/block_reduce_sum_ref.py"
+        "implementation": "implementations/triton/reductions/block_reduce_sum.py",
+        "reference": "references/torch/reductions/block_reduce_sum_ref.py"
       },
       {
         "name": "online_softmax",
         "path": "modules/reductions/online_softmax",
         "description": "Compute softmax through a numerically stable running reduction.",
-        "implementation": "implementations/triton/online_softmax.py",
-        "reference": "references/torch/online_softmax_ref.py"
+        "implementation": "implementations/triton/reductions/online_softmax.py",
+        "reference": "references/torch/reductions/online_softmax_ref.py"
       }
     ],
     "numerics": [
@@ -68,8 +68,8 @@
         "name": "welford_variance",
         "path": "modules/numerics/welford_variance",
         "description": "Compute row-wise mean and variance using numerically stable running statistics.",
-        "implementation": "implementations/triton/welford_variance.py",
-        "reference": "references/torch/welford_variance_ref.py"
+        "implementation": "implementations/triton/numerics/welford_variance.py",
+        "reference": "references/torch/numerics/welford_variance_ref.py"
       }
     ]
   }
